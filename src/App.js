@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <AppHeader />
-      <Space>
-        <SideMenu />
+      <Space className="SideMenuContent">
+        <SideMenu   />
         <PageContent />
       </Space>
       <AppFooter />
