@@ -16,18 +16,18 @@ function SideMenu() {
                     icon: <AppstoreAddOutlined />,
                     onClick: handleClick
                 },
+                 {
+                    label: "Orders",
+                    key: "/orders",
+                    icon: <ShoppingCartOutlined />,
+                    onClick: handleClick
+                },
                 {
                     label: "Inventory",
                     key: "/inventory",
                     icon: <StockOutlined />,
                     onClick: handleClick
                     
-                },
-                {
-                    label: "Orders",
-                    key: "/orders",
-                    icon: <ShoppingCartOutlined />,
-                    onClick: handleClick
                 },
                 {
                     label: "Customers",
