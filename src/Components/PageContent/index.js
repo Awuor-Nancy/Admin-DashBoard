@@ -1,6 +1,9 @@
 
-function PageContent(params) {
-    return <div className="PageContent">PageContent</div>
-    
+function PageContent() {
+    return (
+        <div
+            className="PageContent">
+        </div>
+    )
 }
 export default PageContent;

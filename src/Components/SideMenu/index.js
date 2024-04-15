@@ -1,43 +1,48 @@
-import { AppstoreAddOutlined, PoweroffOutlined, ShoppingCartOutlined, StockOutlined, UnorderedListOutlined, UserOutlined } from "@ant-design/icons";
+import { AppstoreAddOutlined, PoweroffOutlined, ShoppingCartOutlined, StockOutlined, UsergroupAddOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
+import { useNavigate } from "react-router-dom";
 
-function SideMenu(params) {
+function SideMenu() {
+    const navigate = useNavigate();
+    const handleClick = (item) => {
+        navigate(item.key);
+    }
     return (
         <div className="SideMenu">
             <Menu items={[
                 {
                     label: "Dashboard",
                     key: "/",
-                    icon: <AppstoreAddOutlined />
+                    icon: <AppstoreAddOutlined />,
+                    onClick: handleClick
                 },
                 {
                     label: "Inventory",
                     key: "/inventory",
-                    icon: <StockOutlined />
+                    icon: <StockOutlined />,
+                    onClick: handleClick
                     
                 },
                 {
                     label: "Orders",
                     key: "/orders",
-                    icon: <ShoppingCartOutlined />
+                    icon: <ShoppingCartOutlined />,
+                    onClick: handleClick
                 },
                 {
                     label: "Customers",
                     key: "/customers",
-                    icon: <UnorderedListOutlined />
-                },
-                 {
-                    label: "User-profile",
-                     key: "/user-profile",
-                    icon: <UserOutlined />
-                },
+                    icon: 
+                        <UsergroupAddOutlined />,
+                    onClick: handleClick
+                },     
                 {
                     label: "SignOut",
                     key: "/signout",
                     icon: <PoweroffOutlined />,
-                    danger: true
+                    danger: true,
+                    onClick: handleClick
                 }
-
             ]}>
             </Menu>
         </div >

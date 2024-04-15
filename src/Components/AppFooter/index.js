@@ -1,7 +1,7 @@
-import { HeatMapOutlined, HomeOutlined, LayoutOutlined, MailOutlined, PhoneOutlined } from "@ant-design/icons";
+import { HomeOutlined, LayoutOutlined, MailOutlined, PhoneOutlined } from "@ant-design/icons";
 import { Typography } from "antd";
 
-function AppFooter(params) {
+function AppFooter() {
     return (
         <div className="AppFooter">
             <PhoneOutlined />

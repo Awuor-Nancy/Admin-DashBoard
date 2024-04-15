@@ -21,27 +21,23 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 20px;
-
+  font-weight: 900;
+  
 }
 
-/* .PageContent{
-  height: 80px;
+.PageContent{
   display: flex;
   border-bottom: 2px solid gold;
   justify-content: space-between;
-  padding: 5px;
+  padding-left: 15px;
   align-items: center;
-}
+} 
 
 .SideMenu{
-  height: 80px;
-  display: flex;
-  border-bottom: 2px solid gold;
   justify-content: space-between;
   padding: 5px;
   align-items: center;
-}
-*/
+} 
 
 .AppFooter{
   height: 40px;
@@ -51,8 +47,6 @@
   padding: 15px;
   align-items: center;
   background-color: rgb(152, 150, 150);
-
-  
 } 
 
 
